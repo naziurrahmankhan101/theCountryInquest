@@ -1,66 +1,89 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+## Project Description
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+*This GitHub repository hosts The Country Inquest, a web application that enables users to stay informed about ongoing incidents across the country. The platform allows users to report incidents, engage with the community by providing reactions, and contribute through comments on submitted reports.*
 
-## About Laravel
+## Table of Contents
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- [Team Members](#team-members)
+- [Figma UI](#figma-ui)
+- [Project Features](#project-features)
+- [Checkpoints](#checkpoints)
+- [Tech Stack](#tech-stack)
+- [Acknowledgements](#acknowledgements)
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+---
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Team Members
 
-## Learning Laravel
+| Name              | ID       | Role           |
+|-------------------|----------|----------------|
+| Naziur Rahman Khan     | 20220104117      | Team Lead      |
+| Marjana Salauddin         | 20220104107      | Frontend+Backend Dev    |
+| Marjan Binta Monir     | 20220104106      | Frontend+Backend Dev   |
+| Aspia Amir      | 20220104112      | Frontend+Backend Dev |
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+---
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## Figma UI
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Access the Figma UI Design by clicking the link below:
 
-## Laravel Sponsors
+🎨 **[Figma UI Link](https://www.figma.com/design/1JiPqNYaSjrUhdymNOfQVc/The-Country-Inquest?node-id=0-1&t=YSD3YRwGLLjCANHD-1)**
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+---
 
-### Premium Partners
+## Project Features
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+🌟 **Core Highlights:**
 
-## Contributing
+1.  **User Authentication** - Secure sign-up, login, and logout for users and admin.
+2.  **Interactive Admin Dashboard** - Detailed analytics admin dashboard to control the whole website and report news.
+3.  **Responsive Design** - Fully optimized for mobile and desktop.
+4.  **Interactive News** - The reported news can be liked, disliked and commented 
+5.  **Search and category functionality** - The website has a seamless search bar to search specific news and all the news will be divided into categories.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+---
 
-## Code of Conduct
+## Checkpoints
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+🚀 **Project Milestones:**
 
-## Security Vulnerabilities
+### Milestone 1: The Dummy Start
+- ✅ Add News Template into website
+- ✅ Render posts from database
+- ✅ Implement pagination
+- ✅ Add news inner page
+- ✅ Post by category
+- ✅ About us page
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### Milestone 2: Getting Somewhere
+- 🔄 Authentication
+- 🔄 Role and Permission for admin
+- 🔄 Adding Like and Dislike button for news
+- 🔄 Adding view count for news
+- 🔄 Category selection implementation
+- 🔄 Home Page - Latest Posts, Popular posts, Recommended, Top categories
+### Milestone 3: At a flying finish
+- 🛠️ Global Search implementation
+- 🛠️ Working on comments on news reported. Like read and writing comments, editing and deleting comments, replying to comments
+- 🛠️ Project deployment
+- 🛠️ More enhancements upon feedbacks
+---
+## Tech Stack
+💻 **Frontend:**
+- React.js
+- TailwindCSS
+🖧 **Backend:**
+- Laravel
+🛠️ **Tools & Utilities:**
+- Git & GitHub
+- Postman (API Testing)
+- Docker (Containerization)
+---
+## Acknowledgements
+💡 **Special Thanks To:**
+- **Mentor:** Mr.Ali Ahnaf and Mr.Md Reasad Zaman Chowdhury - For valuable guidance and feedback.
+- **Contributors:** All team members for their dedication and teamwork.
+- **Community:** For inspiration and resources.
+---
+⚡ **Stay Connected:** Reach out for collaborations or feedback through our [GitHub Issues](https://github.com/your-repo/issues).
