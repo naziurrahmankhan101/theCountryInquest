@@ -1,8 +1,8 @@
 <x-app-layout>
 
-    
+
         <article class="col-span-4 md:col-span-3 mt-10 mx-auto py-5 w-full" style="max-width:700px">
-            <img class="w-full my-2 rounded-lg" src="{{ $post->getThumbnailUrl() }}" alt="thumbnail">
+            <img class="w-full my-2 rounded-lg" src="{{ asset('storage/'.$post->image) }}" alt="thumbnail">
             <h1 class="text-5xl font-bold text-left text-gray-800" style="font-size: 3rem;">
             {{ $post->title }}
             </h1>
@@ -10,7 +10,7 @@
 
             <div class="mt-2 flex justify-between items-center">
                 <div class="flex py-5 text-base items-center">
-                    
+
                     <span class="text-gray-500 text-sm">| {{ $post->getReadingTime() }}</span>
                 </div>
                 <div class="flex items-center">
@@ -33,13 +33,13 @@
                                 d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
                         </svg>
                         <span class="text-gray-600 ml-2">
-                            1 
+                            1
                         </span>
                     </a>
                 </div>
                 <div>
                     <div class="flex items-center">
-                       
+
 
                     </div>
                 </div>
@@ -85,7 +85,7 @@
 
 
         </article>
-  
 
-   
+
+
 </x-app-layout>
