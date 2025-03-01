@@ -1,5 +1,10 @@
 
-  <div class="ml-3 relative">
+  <div class="ml-3 relative flex space-x-4">
+    @can('view-admin',App\Models\User::class)
+  <x-nav-link :navigate='false' href="{{ route('filament.auth.login') }}" :active="request()->routeIs('filament.auth.login')">
+        {{ __('Admin') }}
+    </x-nav-link>
+    @endcan
       <x-dropdown align="right" width="48">
           <x-slot name="trigger">
               @if (Laravel\Jetstream\Jetstream::managesProfilePhotos())
