@@ -21,7 +21,14 @@
 @endphp
 
 
+@if (auth()->check())
+    <img src="{{ auth()->user()->profile_photo_url }}" alt="Profile Photo">
+@else
+    <p>No user logged in</p>
+@endif
 
-
-<img class="mr-3 rounded-full {{ $imageSize }}" src="{{ $author->profile_photo_url }}" alt="{{ $author->name }}">
-<span class="mr-1 {{ $textSize }}">{{ $author->name }} </span>
+@if (auth()->check())
+    <p>User is logged in: {{ auth()->user()->name }}</p>
+@else
+    <p>No user is logged in</p>
+@endif
