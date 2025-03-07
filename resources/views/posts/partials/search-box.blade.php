@@ -9,7 +9,7 @@
     search : query
 })" id="search-box">
     <div>
-        <h3 class="text-lg font-semibold text-gray-900 mb-3">Search</h3>
+        <h3 class="mb-3 text-lg font-semibold text-gray-900">{{ __('blog.search') }}</h3>
         <div class="w-52 flex rounded-2xl bg-gray-100 py-2 px-3 mb-3 items-center">
             <span>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -21,11 +21,11 @@
             <input x-model="query"
                 @keydown.enter="search()"
                 class="w-40 ml-1 bg-transparent focus:outline-none focus:border-none focus:ring-0 outline-none border-none text-xs text-gray-800 placeholder:text-gray-400"
-                type="text" placeholder="Search...">
+                type="text" placeholder="{{ __('blog.search_placeholder') }}">
         </div>
         <button @click="search()"
             class="px-3 py-1 bg-gray-800 text-white rounded-lg hover:bg-gray-900">
-            Search
+            {{ __('blog.search') }}
         </button>
     </div>
 </div>
