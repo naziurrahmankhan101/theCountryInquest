@@ -27,7 +27,8 @@
     <div class="py-4">
         @if($posts->count())
             @foreach ($posts as $post)
-                <x-posts.post-item :post="$post" />
+            <x-posts.post-item wire:key="{{ $post->id }}" :post="$post" 
+            />
             @endforeach
         @else
             <p class="text-gray-600">No posts found matching your search.</p>

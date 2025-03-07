@@ -50,6 +50,7 @@ class PostList extends Component
     public function getPostsProperty()
     {
         return Post::published()
+           ->with('author','categories')
             ->when($this->activeCategory, function ($query) {
                 // Filter posts by category slug if category is set
                 $query->whereHas('categories', function ($q) {
@@ -77,6 +78,13 @@ class PostList extends Component
         $this->category = '';
         $this->activeCategory = null;
         $this->resetPage(); // Reset pagination when filters are cleared
+    }
+    public function activeCategory()
+    {
+        if($this->category === null || $this->category === ''){
+            return null;
+        }
+        return Category::where('slug', $this->category)->first();
     }
 
     public function render()
