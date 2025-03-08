@@ -1,19 +1,18 @@
 @props(['post'])
-<div class="">
-    <a href="#">
+<div {{ $attributes }}>
+    <a wire:navigate href="{{ route('posts.show', $post->slug) }}">
         <div>
-            <img class="w-full rounded-xl" src="{{ $post->image }}">
+            <img class="w-full rounded-xl" src="{{ asset('storage/'.$post->image) }}">
         </div>
     </a>
     <div class="mt-3">
-        <div class="flex items-center mb-2">
-            <a href="#" class="bg-red-600
-        text-white
-        rounded-xl px-3 py-1 text-sm mr-3">
-                Laravel
-            </a>
+        <div class="flex items-center mb-2 gap-x-2">
+            @if ($category = $post->categories()->first())
+ 
+        @endif
             <p class="text-gray-500 text-sm">{{ $post->published_at }}</p>
         </div>
-        <a href="#" class="text-xl font-bold text-gray-900">{{ $post->title }}</a>
+        <a wire:navigate href="{{ route('posts.show', $post->slug) }}"
+            class="text-xl font-bold text-gray-900">{{ $post->title }}</a>
     </div>
 </div>

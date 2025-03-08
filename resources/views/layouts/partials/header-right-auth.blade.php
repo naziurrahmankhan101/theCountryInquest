@@ -1,5 +1,10 @@
 
-  <div class="ml-3 relative">
+  <div class="ml-3 relative flex space-x-4">
+    @can('view-admin',App\Models\User::class)
+  <x-nav-link :navigate='false' href="{{ route('filament.auth.login') }}" :active="request()->routeIs('filament.auth.login')">
+        {{ __('menu.admin') }}
+    </x-nav-link>
+    @endcan
       <x-dropdown align="right" width="48">
           <x-slot name="trigger">
               @if (Laravel\Jetstream\Jetstream::managesProfilePhotos())
@@ -26,20 +31,20 @@
           <x-slot name="content">
               <!-- Account Management -->
               <div class="block px-4 py-2 text-xs text-gray-400">
-                  {{ __('Manage Account') }}
+                  {{ __('menu.manage_account') }}
               </div>
 
               
               <x-dropdown-link wire:navigate href="{{ route('profile.show') }}">
-                  {{ __('Profile') }}
+                  {{ __('menu.profile') }}
               </x-dropdown-link>
 
-              @if (Laravel\Jetstream\Jetstream::hasApiFeatures())
+              {{-- @if (Laravel\Jetstream\Jetstream::hasApiFeatures())
                   
                   <x-dropdown-link wire:navigate href="{{ route('api-tokens.index') }}">
                       {{ __('API Tokens') }}
                   </x-dropdown-link>
-              @endif
+              @endif --}}
 
               <div class="border-t border-gray-200"></div>
 
@@ -48,7 +53,7 @@
                   @csrf
 
                   <x-dropdown-link href="{{ route('logout') }}" @click.prevent="$root.submit();">
-                      {{ __('Log Out') }}
+                      {{ __('menu.logout') }}
                   </x-dropdown-link>
               </form>
           </x-slot>
